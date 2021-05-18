@@ -45,7 +45,7 @@ body {
   border-radius: 10px;
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 5%;
+  margin-top: 3%;
   font-family: 'Courier Prime';
   font-size: 1.2em;
   color: white;
@@ -53,14 +53,13 @@ body {
 
 #content {
   padding: 1em;
-  background: linear-gradient(to top, rgba(35, 41, 34, 0.795), #161b1788);
   margin: 0 auto;
   width: 80%;
   border-radius: 10px;
   position: absolute;
-  bottom: 5%;
+  bottom: 23%;
   left: 10%;
-  box-shadow: 0 9px 18px rgba(0,0,0,0.8);
+  box-shadow: 1px 0 10px 5px rgba(0,0,0,0.8);
   z-index: -1;
 }
 
@@ -69,6 +68,7 @@ body {
 #chat_form {
   color: rgba(255, 255, 255, 0);
   text-align: center;
+  padding-bottom: 1%;
 }
 
 #chat_form a {
@@ -100,11 +100,32 @@ body {
   text-align: left;
   color: #212121;
   padding: 0.4em;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255, 255, 255, 0.925);
   border-radius: 6px;
+  position: relative;
+  z-index: 2;
 }
 
 #chat_form {
   display: block;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 55vw;
+  box-shadow: 1px 0 10px 5px  rgba(0,0,0,0.8);
+  border-radius: 10px;
+}
+.green-border-focus .form-control:focus {
+  border: 2px solid #8bc34a;
+  box-shadow: 0 0 0 0.2rem rgba(153, 247, 45, 0.329);
+}
+#send {
+  width: 30%;
+  margin-bottom: 10%;
+}
 
+.creatorNames{
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }

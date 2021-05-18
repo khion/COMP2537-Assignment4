@@ -28,7 +28,9 @@
     </ul>
  <!------------------------------ Input for name ----------------------------->    
     <input type="text" class="form-control w-25 p-3 mr-3" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter your name" id="name">
-
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-success my-2 my-sm-0 mr-3" type="submit" id = "leave">Enter</button>
+    </form>
  <!------------------------------ Leave/exit button ----------------------------->        
     <form class="form-inline my-2 my-lg-0">
       <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" id = "leave">Leave</button>
@@ -36,17 +38,24 @@
   </div>
 </nav>
 
-<!------------------------------ Chat box contents ----------------------------->   
+<!------------------------------ Chat box contents -----------------------------> 
+<div class="creatorNames">Created by: 
+  <button class="btn btn-success my-2 my-sm-0" type="submit">Rodnick Gayem: A0100723</button>
+  <button class="btn btn-success my-2 my-sm-0" type="submit">Jeff Phan: A01070752</button>
+  <button class="btn btn-success my-2 my-sm-0" type="submit">Steven Gellert: A01221187</button>
+  <button class="btn btn-success my-2 my-sm-0" type="submit">Man Chuen Lee: A01221171</button>
+</div>  
   <div id="container">
   
   <div id="content">
     <div id="chat_content"></div>
     <p>&nbsp;</p>
-    <form id="chat_form">
-      <textarea id="msg" placeholder="Your message here"></textarea>
-      <button id="send" class="btn btn-success my-2 my-sm-0 mt-2" type="submit" id = "leave">Send</button>
-    </form>
   </div>
+  <form id="chat_form" class="form-group green-border-focus">
+    <textarea id="msg" placeholder="Your message here" class="form-control" rows="3"></textarea><br>
+    <button id="send" class="btn btn-success my-2 my-sm-0 mt-2 mb- 1 rounded-pill" type="submit" id = "leave">Send</button><br>
+  </form>
+
   
 
 <!------------------------------ Scripts ----------------------------->   
