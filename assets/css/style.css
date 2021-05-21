@@ -3,7 +3,7 @@ body {
   padding: 0%;
   overflow-x: hidden;
 	overflow-y: auto;
-  background-image: url("../img/chat-background.jpg");
+  background-image: url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
   background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
