@@ -13,6 +13,7 @@ body {
 #container {
   margin: 0;
   padding: 0;
+  display: none;
 }
 
 #container:before {
@@ -128,4 +129,46 @@ body {
   color: white;
   font-weight: bold;
   text-align: center;
+}
+
+#headerTitleContainer{
+text-align: center;
+}
+
+
+#headerTitle{
+  text-align: center;
+  margin-top: 9%;
+  color: white;
+  background-color: rgba(97, 97, 97, 0.9);
+  border: 3px solid palegoldenrod;
+  display: inline-block;
+  padding: 2%;
+}
+
+
+#revealChatButton{
+  margin-top: 4%;
+  background: linear-gradient(to top, #8f57f7, #3d58f0);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:snow;
+  border: 3px solid pink;
+  border-radius: 10%;
+  padding: 1%;
+  box-shadow: 3px 4px 5px black;
+}
+
+#closeChatButton{
+  width: 2.5%;
+  float:right;
+  margin-right: 3%;
+  cursor: pointer;
+}
+
+#revealChatButton:hover{
+  color: white;
+  background: linear-gradient(to top, #3d58f0, #8f57f7);
+  border: 3px solid plum;
 }

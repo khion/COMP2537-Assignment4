@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,66 +7,85 @@
   <title>Assignment 4</title>
 
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/5298eacfe6.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-<!------------------------------ This is Navigation Bar ----------------------------->   
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="#"><i class="fas fa-robot"></i> CHATTER BOX</a>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
-      </li>
-    </ul>
- <!------------------------------ Input for name ----------------------------->    
-    <input type="text" class="form-control w-25 p-3 mr-3" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter your name" id="name">
-    <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-outline-success my-2 my-sm-0 mr-3" type="submit" id = "leave">Enter</button>
-    </form>
- <!------------------------------ Leave/exit button ----------------------------->        
-    <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" id = "leave">Leave</button>
-    </form>
-  </div>
-</nav>
+  <!------------------------------ This is Navigation Bar ----------------------------->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#"><i class="fas fa-robot"></i> CHATTER BOX</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+      </ul>
+      <!------------------------------ Input for name ----------------------------->
+      <input type="text" class="form-control w-25 p-3 mr-3" aria-label="Default"
+        aria-describedby="inputGroup-sizing-default" placeholder="Enter your name" id="name">
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0 mr-3" type="submit" id="leave">Enter</button>
+      </form>
+      <!------------------------------ Leave/exit button ----------------------------->
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" id="leave">Leave</button>
+      </form>
+    </div>
+  </nav>
 
-<!------------------------------ Chat box contents -----------------------------> 
-<div class="creatorNames">Created by: 
-  <button class="btn btn-success my-2 my-sm-0" type="submit">Rodnick Gayem: A0100723</button>
-  <button class="btn btn-success my-2 my-sm-0" type="submit">Jeff Phan: A01070752</button>
-  <button class="btn btn-success my-2 my-sm-0" type="submit">Steven Gellert: A01221187</button>
-  <button class="btn btn-success my-2 my-sm-0" type="submit">Man Chuen Lee: A01221171</button>
-</div>  
+  <!------------------------------ Chat box contents ----------------------------->
+  <div class="creatorNames">Created by:
+    <button class="btn btn-success my-2 my-sm-0" type="submit">Rodnick Gayem: A0100723</button>
+    <button class="btn btn-success my-2 my-sm-0" type="submit">Jeff Phan: A01070752</button>
+    <button class="btn btn-success my-2 my-sm-0" type="submit">Steven Gellert: A01221187</button>
+    <button class="btn btn-success my-2 my-sm-0" type="submit">Man Chuen Lee: A01221171</button>
+  </div>
+
+  <div id="headerTitleContainer">
+    <h1 id="headerTitle">Feel like talking?<br>Click the button below and chat right now!</h1>
+  </div>
+
+  <button id="revealChatButton" class="button">Chat Now!</button>
+
   <div id="container">
-  
-  <div id="content">
-    <div id="chat_content"></div>
-    <p>&nbsp;</p>
-  </div>
-  <form id="chat_form" class="form-group green-border-focus">
-    <textarea id="msg" placeholder="Your message here" class="form-control" rows="3"></textarea><br>
-    <button id="send" class="btn btn-success my-2 my-sm-0 mt-2 mb- 1 rounded-pill" type="submit" id = "leave">Send</button><br>
-  </form>
 
-  
+    <div id="content">
+      <div id="chat_content"></div>
+      <p>&nbsp;</p>
+    </div>
+    <form id="chat_form" class="form-group green-border-focus">
+      <textarea id="msg" placeholder="Your message here" class="form-control" rows="3"></textarea><br>
+      <button id="send" class="btn btn-success my-2 my-sm-0 mt-2 mb- 1 rounded-pill" type="submit"
+        id="leave">Send</button><br>
+    </form>
+    <img src="../img/redX.png" alt="Image of Red X" id="closeChatButton">
 
-<!------------------------------ Scripts ----------------------------->   
-  <script src="http://localhost:8000/socket.io/socket.io.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!------------------------------ Scripts ----------------------------->
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  
-</div>
+    <script src="../scripts/index_function.js"></script>
+
+  </div>
 </body>
 
 </html>
