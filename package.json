@@ -1,0 +1,31 @@
+{
+  "name": "COMP2537-Assignment4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khion/COMP2537-Assignment4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khion/COMP2537-Assignment4/issues"
+  },
+  "homepage": "https://github.com/khion/COMP2537-Assignment4#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "jquery": "^3.6.0",
+    "jsdom": "^16.5.3",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.2.5",
+    "rotating-file-stream": "^2.1.5",
+    "socket.io": "^4.1.2"
+  }
+}

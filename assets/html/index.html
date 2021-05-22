@@ -29,16 +29,16 @@
         <li class="nav-item">
           <a class="nav-link" href="#">About Us</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logged in as: <span id="name" placeholder="Name"></span></a>
+        </li>
+        
       </ul>
-      <!------------------------------ Input for name ----------------------------->
-      <input type="text" class="form-control w-25 p-3 mr-3" aria-label="Default"
-        aria-describedby="inputGroup-sizing-default" placeholder="Enter your name" id="name">
-      <form class="form-inline my-2 my-lg-0">
-        <button class="btn btn-outline-success my-2 my-sm-0 mr-3" type="submit" id="leave">Enter</button>
-      </form>
+     
+      
       <!------------------------------ Leave/exit button ----------------------------->
-      <form class="form-inline my-2 my-lg-0">
-        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" id="leave">Leave</button>
+      <form action="/logout" method="get" class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" id="leave">Log Out</button>
       </form>
     </div>
   </nav>
@@ -60,15 +60,18 @@
   <div id="container">
 
     <div id="content">
+      <img src="../img/redX.png" alt="Image of Red X" id="closeChatButton">
       <div id="chat_content"></div>
       <p>&nbsp;</p>
     </div>
     <form id="chat_form" class="form-group green-border-focus">
+      
       <textarea id="msg" placeholder="Your message here" class="form-control" rows="3"></textarea><br>
-      <button id="send" class="btn btn-success my-2 my-sm-0 mt-2 mb- 1 rounded-pill" type="submit"
-        id="leave">Send</button><br>
+      <button id="send" class="btn btn-success my-2 my-sm-0 mt-2 mb- 1 rounded-pill" type="button">Send</button><br>
     </form>
-    <img src="../img/redX.png" alt="Image of Red X" id="closeChatButton">
+    
+
+    
 
 
     <!------------------------------ Scripts ----------------------------->
@@ -83,8 +86,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../scripts/index_function.js"></script>
-
+    <script src="../scripts/client-main.js"></script>
   </div>
 </body>
 
